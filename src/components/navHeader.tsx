@@ -13,7 +13,7 @@ import { Car } from "lucide-react";
 
 const NavHeader = () => {
   return (
-    <header className="bg-white flex justify-between items-center p-4 border-b border-border">
+    <header className="bg-white sticky top-0 z-50 flex justify-between items-center p-4 border-b border-border">
       {/* LOGO */}
       <div className="flex items-center gap-2">
        <Car className="text-[#00C9A7]  w-8 h-8 stroke-[2] transition-transform duration-300 hover:rotate-12" />
@@ -22,7 +22,7 @@ const NavHeader = () => {
 
       {/* DESKTOP NAV */}
       <nav className="hidden md:flex items-center gap-4 text-black">
-        <Button variant="ghost">Home</Button>
+       
         <Button variant="ghost">Cars</Button>
         <Button variant="ghost">About</Button>
         <Button variant="ghost">Contact</Button>
@@ -53,9 +53,7 @@ const NavHeader = () => {
 
           <SheetContent side="right" className="bg-[#00022E] text-white w-full max-w-full h-full">
             <div className="flex flex-col  space-y-4 mt-6">
-              <Button variant="ghost" className="text-white  w-full text-right">
-                Home
-              </Button>
+              
               <Button variant="ghost" className="text-white w-full text-right">
                 About
               </Button>

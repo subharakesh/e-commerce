@@ -1,64 +1,51 @@
-import { Button } from "../components/ui/button"
-import {
-  Card,
-  CardAction,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "../components/ui/card"
-import { Input } from "../components/ui/input"
-import { Label } from "../components/ui/label"
-
-const  CarCard = () => {
+import { Card, CardContent, CardFooter } from "../components/ui/card";
+import { Button } from "../components/ui/button";
+import { Calendar,Fuel,Milestone } from "lucide-react";
+export function CarCard() {
   return (
-    <Card className="w-full max-w-sm">
-      <CardHeader>
-        <CardTitle>Login to your account</CardTitle>
-        <CardDescription>
-          Enter your email below to login to your account
-        </CardDescription>
-        <CardAction>
-          <Button variant="link">Sign Up</Button>
-        </CardAction>
-      </CardHeader>
-      <CardContent>
-        <form>
-          <div className="flex flex-col gap-6">
-            <div className="grid gap-2">
-              <Label htmlFor="email">Email</Label>
-              <Input
-                id="email"
-                type="email"
-                placeholder="m@example.com"
-                required
-              />
-            </div>
-            <div className="grid gap-2">
-              <div className="flex items-center">
-                <Label htmlFor="password">Password</Label>
-                <a
-                  href="#"
-                  className="ml-auto inline-block text-sm underline-offset-4 hover:underline"
-                >
-                  Forgot your password?
-                </a>
-              </div>
-              <Input id="password" type="password" required />
-            </div>
-          </div>
-        </form>
-      </CardContent>
-      <CardFooter className="flex-col gap-2">
-        <Button type="submit" className="w-full">
-          Login
-        </Button>
-        <Button variant="outline" className="w-full">
-          Login with Google
-        </Button>
-      </CardFooter>
+    <Card className="w-full max-w-sm overflow-hidden shadow-lg rounded-xl">
+      
+      {/* Car Image */}
+      <img
+        src="https://images.unsplash.com/photo-1502877338535-766e1452684a"
+        alt="Car"
+        className="w-full object-cover aspect-video"
+      />
+
+     <CardContent className="p-4 space-y-4">
+
+  {/* Title */}
+  <h2 className="text-2xl font-normal text-gray-900 leading-tight">
+    2022 Honda City ZX (1st Owner)
+  </h2>
+
+  {/* Price */}
+  <p className="text-2xl font-bold text-[#00C9A7]">
+    ₹12,50,000
+  </p>
+
+  {/* Specs Section */}
+  <div className="grid grid-cols-3 gap-4 mt-2">
+
+    <div className="flex flex-col items-center text-gray-700">
+      <Calendar className="w-6 h-6 text-[#00022E]" />
+      <span className="text-sm font-medium mt-1">2022</span>
+    </div>
+
+    <div className="flex flex-col items-center text-gray-700">
+      <Milestone className="w-6 h-6 text-[#00022E]" />
+      <span className="text-sm font-medium mt-1">15,000 km</span>
+    </div>
+
+    <div className="flex flex-col items-center text-gray-700">
+      <Fuel className="w-6 h-6 text-[#00022E]" />
+      <span className="text-sm font-medium mt-1">Petrol</span>
+    </div>
+
+  </div>
+</CardContent>
+
+
     </Card>
-  )
+  );
 }
-export default CarCard;

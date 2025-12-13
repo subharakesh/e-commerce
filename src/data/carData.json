@@ -1,0 +1,63 @@
+export const carData = [
+  {
+    id: 1,
+    name: "2022 Honda City ZX",
+    year: 2022,
+    owner: "1st Owner",
+    price: "₹12,50,000",
+    kmDriven: "15,000 km",
+    fuelType: "Petrol",
+    transmission: "Automatic",
+    location: "Bangalore",
+    image: "https://images.unsplash.com/photo-1502877338535-766e1452684a"
+  },
+  {
+    id: 2,
+    name: "2021 Hyundai Creta SX",
+    year: 2021,
+    owner: "1st Owner",
+    price: "₹14,20,000",
+    kmDriven: "22,000 km",
+    fuelType: "Diesel",
+    transmission: "Manual",
+    location: "Chennai",
+    image: "https://images.unsplash.com/photo-1523987355523-c7b5b48b99b4"
+  },
+  {
+    "id": 3,
+    "name": "2020 Maruti Swift VXI",
+    "year": 2020,
+    "owner": "2nd Owner",
+    "price": "₹6,40,000",
+    "kmDriven": "38,000 km",
+    "fuelType": "Petrol",
+    "transmission": "Manual",
+    "location": "Hyderabad",
+    "image": "https://images.unsplash.com/photo-1619644187725-a0bb14d84564"
+  },
+  {
+    "id": 4,
+    "name": "2019 Toyota Innova Crysta",
+    "year": 2019,
+    "owner": "1st Owner",
+    "price": "₹18,75,000",
+    "kmDriven": "45,000 km",
+    "fuelType": "Diesel",
+    "transmission": "Automatic",
+    "location": "Delhi",
+    "image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf"
+  },
+  {
+    "id": 5,
+    "name": "2023 Tata Nexon EV",
+    "year": 2023,
+    "owner": "1st Owner",
+    "price": "₹14,90,000",
+    "kmDriven": "8,400 km",
+    "fuelType": "Electric",
+    "transmission": "Automatic",
+    "location": "Mumbai",
+    "image": "https://images.unsplash.com/photo-1597006433835-c60233ac93e0"
+  }
+
+];
