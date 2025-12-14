@@ -10,6 +10,7 @@ import {
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Car } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const NavHeader = () => {
   return (
@@ -22,9 +23,15 @@ const NavHeader = () => {
 
       {/* DESKTOP NAV */}
       <nav className="hidden md:flex items-center gap-4 text-black">
-       
-        <Button variant="ghost">Cars</Button>
-        <Button variant="ghost">About</Button>
+       <Link to='/cars'>
+       <Button variant="ghost">Cars</Button>
+       </Link>
+        
+         <Link to='/about'>
+         <Button variant="ghost">About</Button>
+         </Link>
+        
+
         <Button variant="ghost">Contact</Button>
 
         <DropdownMenu>
