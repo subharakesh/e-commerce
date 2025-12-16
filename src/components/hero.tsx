@@ -7,11 +7,13 @@ export default function HeroCar() {
       <div
         className="
           mx-auto max-w-25xl
-          rounded-2xl
+          rounded-3xl
           overflow-hidden
           bg-cover bg-center
           bg-no-repeat
           relative
+          mr-15
+          ml-15
         "
         style={{
           backgroundImage:
@@ -19,12 +21,11 @@ export default function HeroCar() {
 
         }}
       >
-        {/* Dark overlay */}
+       
         <div className="absolute inset-0 bg-[#00022E]/80" />
 
-        {/* Content */}
         <div className="relative z-10 px-8 py-20 text-white">
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">
             Discover Your Next Ride
           </h1>
 

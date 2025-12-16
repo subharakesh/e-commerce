@@ -1,5 +1,6 @@
+
 import type { Car } from "../types/car";
-import { Card, CardContent } from "../components/ui/card";
+import { Card, CardContent, CardFooter } from "../components/ui/card";
 import { Calendar, Fuel, Milestone } from "lucide-react";
 
 interface Props {
@@ -20,12 +21,12 @@ export function CarCard({ car }: Props) {
       <CardContent className="p-4 space-y-4">
 
     
-        <h2 className="text-2xl font-normal text-gray-900 leading-tight line-clamp-2">
+        <h2 className="text-1xl semibold text-gray-900 leading-tight line-clamp-2">
           {car.name} ({car.owner})
         </h2>
 
       
-        <p className="text-2xl font-bold text-[#00C9A7]">
+        <p className="text-1.5xl font-bold text-[#00C9A7]">
           ₹{car.price.toLocaleString()}
         </p>
 
@@ -48,7 +49,7 @@ export function CarCard({ car }: Props) {
 
           <div className="flex flex-col items-center text-gray-700">
             <Fuel className="w-6 h-6 text-[#00022E]" />
-            <span className="text-sm font-medium mt-1">
+            <span className="text-sm font-medium mt-1"> 
               {car.fuelType}
             </span>
           </div>
@@ -56,6 +57,12 @@ export function CarCard({ car }: Props) {
         </div>
 
       </CardContent>
+      <CardFooter>
+        <button className="w-full bg-[#311432] text-white py-2 px-4 rounded-lg hover:bg-[#D7BFDC] transition-colors">
+
+            View Details    
+        </button>
+      </CardFooter>
     </Card>
   );
 }

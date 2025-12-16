@@ -10,4 +10,5 @@ export interface Car {
   location: string;
   year: number;
   image: string;
+ 
 }

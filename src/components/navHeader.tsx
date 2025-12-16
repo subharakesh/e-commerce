@@ -15,14 +15,14 @@ import { Link } from "react-router-dom";
 const NavHeader = () => {
   return (
     <header className="bg-white sticky top-0 z-50 flex justify-between items-center p-4 border-b border-border">
-      {/* LOGO */}
+
       <div className="flex items-center gap-2">
-       <Car className="text-[#00C9A7]  w-8 h-8 stroke-[2] transition-transform duration-300 hover:rotate-12" />
-        <h1 className="text-xl font-bold text-black">Carverse</h1>
+       <Car className="text-[#00C9A7]  w-8 h-8 stroke-[2] transition-transform duration-300 hover:rotate-12 ml-20 " />
+        <h1 className="text-2xl font-extrabold font-serif text-black   ">Carverse</h1>
       </div>
 
-      {/* DESKTOP NAV */}
-      <nav className="hidden md:flex items-center gap-4 text-black">
+     
+      <nav className="hidden md:flex  items-center gap-4 font-bold text-black font-serif">
        <Link to='/cars'>
        <Button variant="ghost">Cars</Button>
        </Link>
@@ -36,8 +36,10 @@ const NavHeader = () => {
 
         <DropdownMenu>
           <DropdownMenuTrigger>
-            <Avatar>
-              <span>S</span>
+            <Avatar className="w-10 h-10 bg-[#00022E]/10 text-[#1C2951] mr-20" > 
+              <div className="w-10 h-10 rounded-full bg-[#99EFDE] flex items-center justify-center ">
+  <span className="font-semibold text-black">S</span>
+</div>
             </Avatar>
           </DropdownMenuTrigger>
 
@@ -49,8 +51,8 @@ const NavHeader = () => {
         </DropdownMenu>
       </nav>
 
-      {/* MOBILE MENU (SHEET) */}
-      <div className="md:hidden">
+    
+      <div className="md:hidden ">
         <Sheet>
           <SheetTrigger asChild>
             <Button variant="ghost" className="text-white">
@@ -68,7 +70,8 @@ const NavHeader = () => {
                 Contact
               </Button>
 
-              <hr className="border-white/30" />
+         
+
 
              <p className="text-lg font-extrabold text-white mt-4 mb-2 ml-5">Account</p>
  

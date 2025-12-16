@@ -1,5 +1,6 @@
 
-export const CARS=[
+
+export const CARS =[
   {
     "id": 1,
     "name": "2022 Honda ",
@@ -11,11 +12,11 @@ export const CARS=[
     "owner": "1st Owner",
     "location": "Bangalore",
     "year": 2022,
-    "image": "/cars/honda.jpg"
+    "image": "/cars/hondacrv.jpg"
   },
   {
     "id": 2,
-    "name": "2021 Hyundai Verna SX",
+    "name": "2021 Hyundai Palisade",
     "price": 1050000,
     "brand": "Hyundai",
     "fuelType": "Diesel",
@@ -24,7 +25,7 @@ export const CARS=[
     "owner": "2nd Owner",
     "location": "Chennai",
     "year": 2021,
-    "image": "/cars/verna.jpg"
+    "image": "/cars/palisade.jpg"
   },
   {
     "id": 3,
@@ -41,15 +42,95 @@ export const CARS=[
   },
   {
     "id": 4,
-    "name": "2019 Tata Nexon XZ+",
+    "name": "2023 Honda Accord",
     "price": 780000,
-    "brand": "Tata",
+    "brand": "Honda",
     "fuelType": "Diesel",
     "transmission": "Manual",
     "kilometers": 52000,
     "owner": "1st Owner",
     "location": "Pune",
     "year": 2019,
-    "image": "/cars/nexon.jpg"
-  }
-]
+    "image": "/cars/hondaaccord.jpg"
+  },
+  {
+    id: 5,
+    name: "2018 Nissan Versa SV",
+    price: 1650000,
+    brand: "Nissann",
+    fuelType: "Petrol",
+    transmission: "Automatic",
+    kilometers: 9000,
+    owner: "1st Owner",
+    location: "Mumbai",
+    year: 2018,
+    image: "/cars/nissan.jpg",
+  },
+  {
+    id: 6,
+    name: "2023 Ford Mustang Ecoboost Premium",
+    price: 3850000,
+    brand: "Ford",
+    fuelType: "Petrol",
+    transmission: "Automatic",
+    kilometers: 22000,
+    owner: "1st Owner",
+    location: "Delhi",
+    year: 2022,
+    image: "/cars/mustang.jpg",
+  },
+  {
+    id: 7,
+    name: "2017 Mercedes-Benz SL450",
+    price: 890000,
+    brand: "Mercedes-Benz",
+    fuelType: "Petrol",
+    transmission: "Manual",
+    kilometers: 30000,
+    owner: "2nd Owner",
+    location: "Kochi",
+    year: 2017,
+    image: "/cars/benz.jpg",
+  },
+  {
+    id: 8,
+    name: "2020 Jeep Wrangler Unlimited Sahara",
+    price: 1750000,
+    brand: "Jeep",
+    fuelType: "Electric",
+    transmission: "Automatic",
+    kilometers: 12000,
+    owner: "1st Owner",
+    location: "Bangalore",
+    year: 2020,
+    image: "/cars/jeep.jpg",
+  },
+  {
+    id: 9,
+    name: "2023 Toyota RAV4 XLE Premium",
+    price: 380000,
+    brand: "Toyota",
+    fuelType: "Petrol",
+    transmission: "Manual",
+    kilometers: 55000,
+    owner: "2nd Owner",
+    location: "Coimbatore",
+    year: 2020,
+    image: "/cars/rav4.jpg",
+  },
+  {
+    id: 10,
+    name: "2023 Toyota Camry SE",
+    price: 1450000,
+    brand: "Toyota",
+    fuelType: "Petrol",
+    transmission: "Automatic",
+    kilometers: 28000,
+    owner: "1st Owner",
+    location: "Ahmedabad",
+    year: 2023,
+    image: "/cars/camry.jpg",
+  },
+];
+
+
