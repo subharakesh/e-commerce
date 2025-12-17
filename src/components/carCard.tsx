@@ -2,21 +2,25 @@
 import type { Car } from "../types/car";
 import { Card, CardContent, CardFooter } from "../components/ui/card";
 import { Calendar, Fuel, Milestone } from "lucide-react";
+import { useNavigate } from "react-router-dom"; 
 
 interface Props {
   car: Car;
 }
 
 export function CarCard({ car }: Props) {
+  const navigate = useNavigate();
   return (
     <Card className="w-full max-w-sm overflow-hidden shadow-lg rounded-xl">
 
       
       <img
-        src={car.image}
-        alt={car.name}
-        className="w-full object-cover aspect-video"
-      />
+  src={car.image}
+  alt={car.name}
+  onClick={() => navigate(`/cars/${car.id}`)}
+  className="w-full object-cover aspect-video cursor-pointer"
+/>
+
 
       <CardContent className="p-4 space-y-4">
 
@@ -57,12 +61,15 @@ export function CarCard({ car }: Props) {
         </div>
 
       </CardContent>
-      <CardFooter>
-        <button className="w-full bg-[#311432] text-white py-2 px-4 rounded-lg hover:bg-[#D7BFDC] transition-colors">
+    <CardFooter>
+  <button
+    onClick={() => navigate(`/cars/${car.id}`)}
+    className="w-full bg-[#311432] text-white py-2 px-4 rounded-lg hover:bg-[#D7BFDC] transition-colors"
+  >
+    View Details
+  </button>
+</CardFooter>
 
-            View Details    
-        </button>
-      </CardFooter>
     </Card>
   );
 }

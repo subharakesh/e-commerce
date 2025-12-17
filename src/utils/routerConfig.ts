@@ -21,4 +21,9 @@ export const ROUTE_CONFIGS = [
     component: () => import("../pages/about"),
     exact: true,
 },
+  {
+    path: "cars/:id",
+    component: () => import("../pages/carDetail"),
+    exact: true,
+},
 ];

@@ -3,6 +3,7 @@
 import { CARS } from "../utils/carData";
 import { CarCard } from "../components/CarCard";
 import NavHeader from "@/components/navHeader";
+import CarDetailCard from "@/components/carDetailCard";
 
 const Cars = () => {
   return (
@@ -15,8 +16,11 @@ const Cars = () => {
         {CARS.map((car) => (
           <CarCard key={car.id} car={car} />
         ))}
+      
       </div>
+      
     </div>
+    
 
   );
 };
