@@ -15,11 +15,18 @@ import { Link } from "react-router-dom";
 const NavHeader = () => {
   return (
     <header className="bg-white sticky top-0 z-50 flex justify-between items-center p-4 border-b border-border">
-
+      <Link to='/'>
       <div className="flex items-center gap-2">
+       
        <Car className="text-[#00C9A7]  w-8 h-8 stroke-[2] transition-transform duration-300 hover:rotate-12 ml-20 " />
+       
         <h1 className="text-2xl font-extrabold font-serif text-black   ">Carverse</h1>
+       
       </div>
+           </Link>
+      
+
+
 
      
       <nav className="hidden md:flex  items-center gap-4 font-bold text-black font-serif">
@@ -32,7 +39,10 @@ const NavHeader = () => {
          </Link>
         
 
-        <Button variant="ghost">Contact</Button>
+       <Link to='/contact'>
+         <Button variant="ghost">Contact</Button>
+         </Link>
+        
 
         <DropdownMenu>
           <DropdownMenuTrigger>

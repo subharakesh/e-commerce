@@ -2,6 +2,7 @@
 import React from "react";
 import {  Route, Routes } from "react-router-dom";
 import { ROUTE_CONFIGS } from "./utils/routerConfig";
+import NavHeader from "./components/navHeader";
 
 
 
@@ -9,6 +10,7 @@ import { ROUTE_CONFIGS } from "./utils/routerConfig";
 function App() {
   return (
     <section>
+      <NavHeader />
     
     
       <div>
