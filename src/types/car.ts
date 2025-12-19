@@ -1,4 +1,4 @@
-export interface Car {
+export type Car = {
   id: number;
   name: string;
   price: number;
@@ -10,5 +10,8 @@ export interface Car {
   location: string;
   year: number;
   image: string;
+  images?: string[];  
+  description?: string;
  
-}
+ 
+};

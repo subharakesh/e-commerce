@@ -1,6 +1,6 @@
-import { InfoCard } from "./InfoCard";
-import { INFO_CARDS } from "../data/infoCards";
-import type { InfoCardData } from "../data/infoCards";
+import { InfoCard } from "./infoCard";
+import { INFO_CARDS } from "../Data/infoCards";
+import type { InfoCardData } from "../Data/infoCards";
 
 export function InfoSection() {
   return (

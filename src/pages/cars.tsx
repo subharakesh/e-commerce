@@ -1,7 +1,7 @@
 
 
 import { CARS } from "../utils/carData";
-import { CarCard } from "../components/CarCard";
+import { CarCard } from "../components/carCard";
 import NavHeader from "@/components/navHeader";
 import CarDetailCard from "@/components/carDetailCard";
 

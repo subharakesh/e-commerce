@@ -1,4 +1,3 @@
-import React from "react";
 import { Button } from "@/components/ui/button";
 import { Avatar } from "@/components/ui/avatar";
 import {
@@ -20,7 +19,7 @@ const NavHeader = () => {
        
        <Car className="text-[#00C9A7]  w-8 h-8 stroke-[2] transition-transform duration-300 hover:rotate-12 ml-20 " />
        
-        <h1 className="text-2xl font-extrabold font-serif text-black   ">Carverse</h1>
+        <h1 className="text-2xl font-extrabold font-serif text-black   ">CarVerse</h1>
        
       </div>
            </Link>

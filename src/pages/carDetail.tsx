@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { CARS } from "@/utils/carData";
-import CarDetailCard from "@/components/CarDetailCard";
+import CarDetailCard from "@/components/carDetailCard";
 
 export default function CarDetailPage() {
   const { id } = useParams();

@@ -1,12 +1,12 @@
-import React from 'react'
- 
-import NavHeader from '../components/navHeader'
+import Footer from '@/components/footer';
 import Hero from '../components/hero'
 
 import HeroCar from '@/components/heroCar';
 
-import { InfoSection } from "@/components/InfoSection";
+import { InfoSection } from "@/components/infoSection";
 import SearchBar from '@/components/searchbar';
+
+
 
 
 
@@ -25,14 +25,16 @@ const HomePage = () => {
         <HeroCar />
         <h1 className="text-3xl md:text-3xl font-semibold text-[#00022E] mb-3 mt-20 ml-25 font-serif ">The Carverse difference</h1>
         <InfoSection />
+   
 
         
 
 
         
-     
+     <Footer />
       
     </div>
+      
   )
 }
 
