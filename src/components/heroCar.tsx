@@ -19,7 +19,6 @@ export default function HeroCar() {
         backgroundImage: "url('/desert2.jpg')",
       }}
     >
-      {/* Optional dark overlay for better contrast */}
       <div className="absolute inset-0 bg-black/30"></div>
 
       <div className="relative w-full px-4">
