@@ -3,17 +3,17 @@ import { Link } from "react-router-dom";
 
 export default function HeroCar() {
   return (
-    <section className="px-6 py-20">
+    <section className="px-6 py-15">
       <div
         className="
-          mx-auto max-w-25xl
+          mx-auto max-w-[1660px]
           rounded-3xl
           overflow-hidden
           bg-cover bg-center
           bg-no-repeat
           relative
-          mr-15
-          ml-15
+          mr-20
+          ml-28
         "
         style={{
           backgroundImage:

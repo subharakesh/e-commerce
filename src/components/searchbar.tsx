@@ -2,7 +2,7 @@
 import { Search } from "lucide-react";
 export default function SearchBar() {
   return (
-    <div className="relative w-full max-w-[1740px] mx-auto mt-8">
+    <div className="relative w-full max-w-[1650px] mx-auto mt-8">
       
     
       <input

@@ -1,38 +1,30 @@
-import CarImageCarousel from "./CarImageCarousel";
 
+import CarImageCarousel from "./CarImageCarousel";
+import { CARS } from "@/utils/carData";
 
 export default function HeroCar() {
   return (
-    
-  
-      <div
-        className="
-          mx-auto max-w-25xl
-          rounded-2xl
-          overflow-hidden
-          bg-cover bg-center
-          bg-no-repeat
-          relative
-        "
-        style={{
-          backgroundImage:
-           "url('/road.jpg')",
+    <div
+      className="
+        relative
+        mx-auto max-w-[1635px]
+        rounded-2xl
+        overflow-hidden
+        bg-cover bg-center
+        bg-no-repeat
+        h-[500px] md:h-[600px]
+        flex items-center justify-center
+      "
+      style={{
+        backgroundImage: "url('/desert2.jpg')",
+      }}
+    >
+      {/* Optional dark overlay for better contrast */}
+      <div className="absolute inset-0 bg-black/30"></div>
 
-
-
-        }}
-        
-      >
-       
-        
-        <CarImageCarousel />
-
-       
-
-
-          
-       
+      <div className="relative w-full px-4">
+        <CarImageCarousel cars={CARS} showDetails />
       </div>
-  
+    </div>
   );
 }

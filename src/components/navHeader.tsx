@@ -17,7 +17,7 @@ const NavHeader = () => {
       <Link to='/'>
       <div className="flex items-center gap-2">
        
-       <Car className="text-[#00C9A7]  w-8 h-8 stroke-[2] transition-transform duration-300 hover:rotate-12 ml-20 " />
+       <Car className="text-[#00C9A7]  w-8 h-8 stroke-[2] transition-transform duration-300 hover:rotate-12 ml-32 " />
        
         <h1 className="text-2xl font-extrabold font-serif text-black   ">CarVerse</h1>
        
@@ -45,7 +45,7 @@ const NavHeader = () => {
 
         <DropdownMenu>
           <DropdownMenuTrigger>
-            <Avatar className="w-10 h-10 bg-[#00022E]/10 text-[#1C2951] mr-20" > 
+            <Avatar className="w-10 h-10 bg-[#00022E]/10 text-[#1C2951] mr-32" > 
               <div className="w-10 h-10 rounded-full bg-[#99EFDE] flex items-center justify-center ">
   <span className="font-semibold text-black">S</span>
 </div>

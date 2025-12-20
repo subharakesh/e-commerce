@@ -9,13 +9,13 @@ interface InfoCardProps {
 
 export function InfoCard({ icon: Icon, title, description }: InfoCardProps) {
   return (
-    <Card className="h-full p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+    <Card className="h-full p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow bg-gradient-to-r from-white to-gray-100 ">
       <CardHeader className="p-0">
         <Icon className="w-12 h-12 text-[#00C9A7]" />
-        <CardTitle className="mt-4 text-2xl font-semibold">{title}</CardTitle>
+        <CardTitle className="mt-4 text-2xl font-semibold font-serif ">{title}</CardTitle>
       </CardHeader>
 
-      <CardContent className="p-0 mt-4 text-gray-600 text-lg">
+      <CardContent className="p-0 mt-4 text-gray-600 text-lg leading-relaxed font-serif">
         {description}
       </CardContent>
     </Card>
