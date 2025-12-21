@@ -14,10 +14,11 @@ export default function HeroCar() {
         bg-no-repeat
         h-[500px] md:h-[600px]
         flex items-center justify-center
+        bg-[#20576E]
       "
-      style={{
-        backgroundImage: "url('/desert2.jpg')",
-      }}
+      // style={{
+      //   backgroundImage: "url('/desert2.jpg')",
+      // }}
     >
       <div className="absolute inset-0 bg-black/30"></div>
 

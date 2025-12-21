@@ -9,23 +9,24 @@ export default function HeroCar() {
           mx-auto max-w-[1660px]
           rounded-3xl
           overflow-hidden
+          bg-[#20576E]
           bg-cover bg-center
           bg-no-repeat
           relative
           mr-20
           ml-28
         "
-        style={{
-          backgroundImage:
-           "url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee')",
+        // style={{
+        //   backgroundImage:
+        //    "url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee')",
 
-        }}
+        // }}
       >
        
-        <div className="absolute inset-0 bg-[#00022E]/80" />
+        <div className="absolute inset-0 bg-[#20576E]/80" />
 
         <div className="relative z-10 px-8 py-20 text-white">
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">
+          <h1 className="text-3xl md:text-5xl font-extrabold mb-4 tracking-tight">
             Discover Your Next Ride
           </h1>
 

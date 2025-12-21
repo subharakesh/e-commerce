@@ -1,3 +1,4 @@
+import { Images } from "lucide-react";
 
 
 export const CARS =[
@@ -40,56 +41,69 @@ export const CARS =[
     "description": "The 2021 Hyundai Palisade is a midsize SUV that combines spaciousness, comfort, and advanced features. It offers three rows of seating, accommodating up to eight passengers, making it ideal for larger families or group travel. The Palisade boasts a refined interior with premium materials and a user-friendly infotainment system featuring a large touchscreen, Apple CarPlay, and Android Auto compatibility. Safety is a priority with Hyundai SmartSense, which includes features like forward collision-avoidance assist, blind-spot collision-avoidance assist, and lane-keeping assist. Under the hood, the Palisade is powered by a robust V6 engine that delivers smooth performance and ample towing capacity. With its stylish design, comfortable ride, and versatile capabilities, the 2021 Hyundai Palisade is a compelling choice in the midsize SUV segment."
     
   },
-  // {
-  //   "id": 3,
-  //   "name": "2020 Maruti Swift ZXI",
-  //   "price": 650000,
-  //   "brand": "Maruti",
-  //   "fuelType": "Petrol",
-  //   "transmission": "Manual",
-  //   "kilometers": 45000,
-  //   "owner": "1st Owner",
-  //   "location": "Hyderabad",
-  //   "year": 2020,
-  //   "image": "/cars/swift.jpg"
-  // },
-  // {
-  //   "id": 4,
-  //   "name": "2023 Honda Accord",
-  //   "price": 780000,
-  //   "brand": "Honda",
-  //   "fuelType": "Diesel",
-  //   "transmission": "Manual",
-  //   "kilometers": 52000,
-  //   "owner": "1st Owner",
-  //   "location": "Pune",
-  //   "year": 2019,
-  //   "image": "/cars/hondaaccord.jpg"
-  // },
-  // {
-  //   id: 5,
-  //   name: "2018 Nissan Versa SV",
-  //   price: 1650000,
-  //   brand: "Nissann",
-  //   fuelType: "Petrol",
-  //   transmission: "Automatic",
-  //   kilometers: 9000,
-  //   owner: "1st Owner",
-  //   location: "Mumbai",
-  //   year: 2018,
-  //   image: "/cars/nissan.jpg",
-  // },
-  // {
-  //   id: 6,
-  //   name: "2023 Ford Mustang Ecoboost Premium",
-  //   price: 3850000,
-  //   brand: "Ford",
-  //   fuelType: "Petrol",
-  //   transmission: "Automatic",
-  //   kilometers: 22000,
-  //   owner: "1st Owner",
-  //   location: "Delhi",
-  //   year: 2022,
-  //   image: "/cars/mustang.jpg",
-  // },
+  {
+    "id": 3,
+    "name": "2022 Toyota Highlander Platinum",
+    "price": 650000,
+    "brand": "Toyota",
+    "fuelType": "Petrol",
+    "transmission": "Manual",
+    "kilometers": 45000,
+    "owner": "1st Owner",
+    "location": "Hyderabad",
+    "year": 2020,
+    "image": "/cars/toyota.jpg",
+    "images": [
+      "/cars/toyota1.jpg",
+      "/cars/toyota2.jpg",
+      "/cars/toyota3.jpg"
+    ],
+    "description": "The 2022 Toyota Highlander Platinum is a midsize SUV that offers a blend of luxury, performance, and advanced technology. It features a spacious and upscale interior with premium materials, comfortable seating for up to eight passengers, and a host of convenience features. The Platinum trim level includes amenities such as leather upholstery, heated and ventilated front seats, a panoramic sunroof, and a premium JBL sound system. The Highlander is equipped with Toyota Safety Sense 2.5+, which includes advanced safety features like pre-collision system with pedestrian detection, lane departure alert with steering assist, and adaptive cruise control. Under the hood, it offers a powerful V6 engine option that delivers smooth acceleration and confident handling. With its refined ride quality, versatile cargo space, and cutting-edge technology, the 2022 Toyota Highlander Platinum is an excellent choice for those seeking a luxurious and capable SUV."
+    
+  },
+  {
+    "id": 4,
+    "name": "2023 Honda Accord",
+    "price": 780000,
+    "brand": "Honda",
+    "fuelType": "Diesel",
+    "transmission": "Manual",
+    "kilometers": 52000,
+    "owner": "1st Owner",
+    "location": "Pune",
+    "year": 2019,
+    "image": "/cars/hondaaccord.jpg",
+    "images": [
+      "/cars/accord1.jpg",
+      "/cars/accord2.jpg",
+      "/cars/accord3.jpg"
+    ],
+    "description": "The 2023 Honda Accord is a midsize sedan that combines sleek design, advanced technology, and a comfortable driving experience. It features a modern and aerodynamic exterior with a spacious and well-appointed interior that offers ample legroom and high-quality materials. The Accord comes equipped with Honda Sensing, a suite of safety and driver-assistive technologies, including collision mitigation braking, road departure mitigation, adaptive cruise control, and lane-keeping assist. The infotainment system includes a large touchscreen display with Apple CarPlay and Android Auto integration for seamless connectivity. Under the hood, the Accord offers a range of efficient engine options that deliver a balance of power and fuel economy. With its refined handling, smooth ride, and impressive fuel efficiency, the 2023 Honda Accord is an excellent choice for those seeking a reliable and stylish sedan."
+  },
+  {
+    id: 5,
+    name: "2018 Nissan Versa SV",
+    price: 1650000,
+    brand: "Nissann",
+    fuelType: "Petrol",
+    transmission: "Automatic",
+    kilometers: 9000,
+    owner: "1st Owner",
+    location: "Mumbai",
+    year: 2018,
+    image: "/cars/nissan.jpg",
+  },
+  {
+    id: 6,
+    name: "2023 Ford Mustang Ecoboost Premium",
+    price: 3850000,
+    brand: "Ford",
+    fuelType: "Petrol",
+    transmission: "Automatic",
+    kilometers: 22000,
+    owner: "1st Owner",
+    location: "Delhi",
+    year: 2022,
+    image: "/cars/mustang.jpg",
+  },
 ];

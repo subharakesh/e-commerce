@@ -11,7 +11,7 @@ interface Props {
 export function CarCard({ car }: Props) {
   const navigate = useNavigate();
   return (
-    <Card className="w-full max-w-sm overflow-hidden shadow-lg rounded-xl">
+    <Card className="w-full max-w-sm overflow-hidden shadow-lg rounded-xl ml-32 mb-10">
 
       
       <img
@@ -22,7 +22,7 @@ export function CarCard({ car }: Props) {
 />
 
 
-      <CardContent className="p-4 space-y-4">
+      <CardContent className="p-4 space-y-4 mb-2">
 
     
         <h2 className="text-1xl semibold text-gray-900 leading-tight line-clamp-2">

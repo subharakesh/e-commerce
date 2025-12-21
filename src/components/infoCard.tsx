@@ -9,6 +9,8 @@ interface InfoCardProps {
 
 export function InfoCard({ icon: Icon, title, description }: InfoCardProps) {
   return (
+    <div className="flex h-full ">
+
     <Card className="h-full p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow bg-gradient-to-r from-white to-gray-100 ">
       <CardHeader className="p-0">
         <Icon className="w-12 h-12 text-[#00C9A7]" />
@@ -19,5 +21,6 @@ export function InfoCard({ icon: Icon, title, description }: InfoCardProps) {
         {description}
       </CardContent>
     </Card>
+    </div>
   );
 }

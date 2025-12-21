@@ -4,7 +4,7 @@ import type { InfoCardData } from "../Data/infoCards";
 
 export function InfoSection() {
   return (
-    <section className="py-16 px-6">
+    <section className="py-16 px-6 ">
       <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-8">
         {INFO_CARDS.map((card: InfoCardData) => (
           <InfoCard

@@ -5,6 +5,7 @@ import { CARS } from "@/utils/carData";
 import CarDetailCard from "@/components/carDetailCard";
 import { addRecentlyViewed } from "@/store/recentlyViewedSlice";
 
+
 export default function CarDetailPage() {
   const { id } = useParams();
   const dispatch = useDispatch();
@@ -24,6 +25,7 @@ export default function CarDetailPage() {
   return (
     <div className="py-10 px-4">
       <CarDetailCard car={car} />
+      
     </div>
   );
 }

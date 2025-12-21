@@ -13,8 +13,8 @@ import {
 export default function Footer() {
   return (
 
-    <footer className="py-10 bg-background ">
-      <div className="container mx-auto px-6 bg-[#000923] mt-20 text-white rounded-4 shadow-lg p-8">
+    <footer className="py-10 bg ">
+      <div className="container mx-auto px-6 bg- bg-[#20576E] mt-20 text-white rounded-4 shadow-lg p-8">
 
         <Card className="border shadow-sm ">
           <CardContent className="p-8">

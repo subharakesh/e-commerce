@@ -13,13 +13,13 @@ import { Link } from "react-router-dom";
 
 const NavHeader = () => {
   return (
-    <header className="bg-white sticky top-0 z-50 flex justify-between items-center p-4 border-b border-border">
+    <header className=" sticky top-0 z-50 flex justify-between items-center p-4 border-b border-border">
       <Link to='/'>
       <div className="flex items-center gap-2">
        
-       <Car className="text-[#00C9A7]  w-8 h-8 stroke-[2] transition-transform duration-300 hover:rotate-12 ml-32 " />
+       <Car className="text-[#960000]  w-8 h-8 stroke-[2] transition-transform duration-300 hover:rotate-12 ml-32 " />
        
-        <h1 className="text-2xl font-extrabold font-serif text-black   ">CarVerse</h1>
+        <h1 className="text-3xl font-extrabold font-serif text-black   ">CarVerse</h1>
        
       </div>
            </Link>
@@ -28,7 +28,7 @@ const NavHeader = () => {
 
 
      
-      <nav className="hidden md:flex  items-center gap-4 font-bold text-black font-serif">
+      <nav className="hidden md:flex  items-center gap-4 font-bold  text-1xl  text-black font-serif">
        <Link to='/cars'>
        <Button variant="ghost">Cars</Button>
        </Link>
@@ -46,7 +46,7 @@ const NavHeader = () => {
         <DropdownMenu>
           <DropdownMenuTrigger>
             <Avatar className="w-10 h-10 bg-[#00022E]/10 text-[#1C2951] mr-32" > 
-              <div className="w-10 h-10 rounded-full bg-[#99EFDE] flex items-center justify-center ">
+              <div className="w-10 h-10 rounded-full bg-[#20576EE] flex items-center justify-center ">
   <span className="font-semibold text-black">S</span>
 </div>
             </Avatar>

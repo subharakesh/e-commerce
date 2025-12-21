@@ -45,17 +45,17 @@ export default function CarImageCarousel({
               
                 {showDetails && (
                   <div className="mt-3">
-                    <h2 className="text-xl font-semibold text-gray-900 leading-tight line-clamp-2 ">
+                    <h2 className="text-medium font-semibold text-white leading-tight line-clamp-2 ">
                       {car.name} 
                     </h2>
 
-                    <p className="text-lg font-medium text-[#00C9A7] mt-1">
+                    <p className="text-medium font-medium  text-[#00C9A7] mt-1">
                       ₹{car.price.toLocaleString()}
                     </p>
                
             
-            
-              {car.kilometers.toLocaleString()} km
+            <p className="text-medium font-medium  text-white mt-1">{car.kilometers.toLocaleString()} km</p>
+              
            
          
                   </div>
