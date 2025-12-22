@@ -10,7 +10,8 @@ export default function CarDetailPage() {
   const { id } = useParams();
   const dispatch = useDispatch();
 
-  const car = CARS.find((c) => c.id === Number(id));
+  const carData = CARS.find((c) => c.id === Number(id));
+  const car = carData ? { ...carData, images: carData.images || carData.Images || [] } : undefined;
 
   useEffect(() => {
     if (car) {

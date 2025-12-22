@@ -92,6 +92,12 @@ export const CARS =[
     location: "Mumbai",
     year: 2018,
     image: "/cars/nissan.jpg",
+    Images: [
+      "/cars/nissan1.jpg",
+      "/cars/nissan2.jpg",
+      "/cars/nissan3.jpg"
+    ],
+    description: "The 2018 Nissan Versa SV is a compact sedan that offers a practical and efficient driving experience. It features a sleek and modern design with a comfortable interior that provides ample space for passengers and cargo. The Versa SV comes equipped with advanced safety features, including a rearview camera, blind-spot monitoring, and rear cross-traffic alert, ensuring peace of mind on the road. The infotainment system includes a touchscreen display with Bluetooth connectivity, allowing for seamless integration with smartphones. Under the hood, the Versa SV is powered by a fuel-efficient engine that delivers a smooth and responsive performance. With its affordable price point, low maintenance costs, and impressive fuel economy, the 2018 Nissan Versa SV is an excellent choice for budget-conscious drivers seeking a reliable and practical sedan."
   },
   {
     id: 6,
@@ -105,5 +111,11 @@ export const CARS =[
     location: "Delhi",
     year: 2022,
     image: "/cars/mustang.jpg",
+    images: [
+      "/cars/ford1.jpg",
+      "/cars/ford2.jpg",
+      "/cars/ford3.jpg"
+    ],
+    description: "The 2023 Ford Mustang Ecoboost Premium is a sporty and stylish coupe that delivers an exhilarating driving experience. It features a sleek and aggressive design with aerodynamic lines and a bold front grille, making it a head-turner on the road. The Ecoboost Premium trim level includes premium features such as leather upholstery, heated and ventilated front seats, a premium sound system, and advanced infotainment options with Apple CarPlay and Android Auto compatibility. Under the hood, the Mustang Ecoboost is powered by a turbocharged four-cylinder engine that delivers impressive performance and fuel efficiency. The Mustang also offers precise handling and responsive steering, making it a joy to drive on both city streets and open highways. With its iconic design, powerful performance, and advanced technology, the 2023 Ford Mustang Ecoboost Premium is an excellent choice for enthusiasts seeking a thrilling and stylish ride."
   },
 ];

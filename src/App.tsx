@@ -3,6 +3,7 @@ import React from "react";
 import {  Route, Routes } from "react-router-dom";
 import { ROUTE_CONFIGS } from "./utils/routerConfig";
 import NavHeader from "./components/navHeader";
+import { Toaster } from "sonner";
 
 
 
@@ -12,6 +13,7 @@ function App() {
   return (
     <section>
       <NavHeader />
+       <Toaster position="bottom-right" richColors />
     
     
     
