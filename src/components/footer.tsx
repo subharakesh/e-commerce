@@ -13,8 +13,8 @@ import {
 export default function Footer() {
   return (
 
-    <footer className="py-10 bg ">
-      <div className="container mx-auto px-6 bg- bg-[#20576E] mt-20 text-white rounded-4 shadow-lg p-8">
+    <footer className="py-2 bg-[#20576E] w-full"> 
+      
 
         <Card className="border shadow-sm ">
           <CardContent className="p-8">
@@ -22,7 +22,7 @@ export default function Footer() {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
 
            
-              <div className="space-y-3">
+              <div className="space-y-3 ml-7">
                 <div className="flex items-center gap-2 text-xl font-bold">
                   <Car className="h-6 w-6 text-primary text-[#00C9A7]" />
                   CarVerse
@@ -48,35 +48,42 @@ export default function Footer() {
               <div>
                 <h4 className="font-semibold mb-3">Quick Links</h4>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                 <Link to="/">
+                 
                      <li className="hover:text-primary cursor-pointer">
-                             Home
+                        <Link to="/"> Home
+                        </Link>
+                            
                      </li>
-                  </Link>
-                       <Link to="/cars">
+                 
+                       
                      <li className="hover:text-primary cursor-pointer">
-                             Cars
+                        <Link to="/cars">cars
+                        </Link>
+                             
                      </li>
-                  </Link>
-                       <Link to="/contact">
+                  
+                       
                      <li className="hover:text-primary cursor-pointer">
-                             Contact
+                        <Link to="/contact">Contact</Link>
+                             
                      </li>
-                          <Link to="/about">
+                         
                      <li className="hover:text-primary cursor-pointer">
+                        <Link to="/about">
                              About
+                        </Link>
                      </li>
-                  </Link>
-                  </Link>
+                  
+                 
 
                    
                 </ul>
               </div>
 
             
-              <div>
-                <h4 className="font-semibold mb-3">Contact Info</h4>
-                <div className="flex gap-1 flex-col text-sm text-muted-foreground">
+              <div className="ml-30">
+                <h4 className="font-semibold mb-3 mr-5">Contact Info</h4>
+                <div className="flex gap-1 flex-col text-sm text-muted-foreground ">
                   <Button size="icon" variant="ghost">
                     
                       <MapPin  className="h-4 w-4 text-[#3b5998]"/>
@@ -116,7 +123,7 @@ export default function Footer() {
           </CardContent>
         </Card>
 
-      </div>
+    
     </footer>
   );
 }

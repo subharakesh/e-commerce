@@ -17,7 +17,6 @@ type ContactFormData = {
   mobile: string;
   message: string;
 };
-
 export default function Contact() {
   const form = useForm<ContactFormData>({
     defaultValues: {
@@ -27,37 +26,27 @@ export default function Contact() {
     },
   });
 
-  function onSubmit(data: ContactFormData) {
-    console.log(data);
-
-   toast.success("Message sent!", {
-  description: "Our team will reach out soon.",
-  duration: 4000, 
-});
-
-
+  function onSubmit(_data: ContactFormData) {
+    toast.success("Message sent!", {
+      description: "Our team will reach out soon.",
+      duration: 4000,
+    });
     form.reset();
   }
 
   return (
-    
-    <div className="container mx-auto mt-20 max-w-4xl  px-6 ml-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-     <div className="bg-white rounded-3xl py-14 px-12 min-h-[650px]">
-
-        <h1 className="text-2xl font-semibold mb-6 text-gray-900 ">
+    <div className="container mx-auto mt-20 max-w-4xl px-6">
+      <div className="bg-white rounded-3xl py-14 px-8 md:px-12">
+        <h1 className="text-2xl font-semibold mb-6 text-gray-900">
           Send Us a Message
         </h1>
 
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
-            className="space-y-5"
+            className="space-y-6"
           >
-
-        
-        
-            <FormField 
+            <FormField
               control={form.control}
               name="name"
               rules={{ required: "Name is required" }}
@@ -65,24 +54,28 @@ export default function Contact() {
                 <FormItem>
                   <FormLabel>Name</FormLabel>
                   <FormControl>
-                    <Input className= "w-[550px]" placeholder="Enter your name" {...field} />
+                    <Input
+                      placeholder="Enter your name"
+                      className="w-full"
+                      {...field}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
             />
 
-         
             <FormField
               control={form.control}
               name="mobile"
               rules={{ required: "Mobile number is required" }}
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="mt-5">Mobile</FormLabel>
+                  <FormLabel>Mobile</FormLabel>
                   <FormControl>
-                    <Input className= "w-[550px]"
+                    <Input
                       placeholder="Enter mobile number"
+                      className="w-full"
                       {...field}
                     />
                   </FormControl>
@@ -91,17 +84,18 @@ export default function Contact() {
               )}
             />
 
-       
             <FormField
               control={form.control}
               name="message"
               rules={{ required: "Message is required" }}
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="mt-5">Message</FormLabel>
+                  <FormLabel>Message</FormLabel>
                   <FormControl>
-                    <Textarea className= "w-[550px] p-10 resize-none"
+                    <Textarea
                       placeholder="Type your message"
+                      className="w-full resize-none p-4"
+                      rows={5}
                       {...field}
                     />
                   </FormControl>
@@ -110,22 +104,15 @@ export default function Contact() {
               )}
             />
 
-            <Button  type="submit"className= "w-[550px]  bg-[#20576E] hover:bg-[#00C9A7] text-white mt-6">
+            <Button
+              type="submit"
+              className="w-full bg-[#20576E] hover:bg-[#00C9A7] text-white"
+            >
               Send Message
             </Button>
-
           </form>
         </Form>
-        
-        
       </div>
-    
-
-      </div>
-      
     </div>
-    
-    
   );
-  
 }

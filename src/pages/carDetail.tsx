@@ -11,7 +11,7 @@ export default function CarDetailPage() {
   const dispatch = useDispatch();
 
   const carData = CARS.find((c) => c.id === Number(id));
-  const car = carData ? { ...carData, images: carData.images || carData.Images || [] } : undefined;
+  const car = carData ? { ...carData, images: carData.images || carData.images || [] } : undefined;
 
   useEffect(() => {
     if (car) {
