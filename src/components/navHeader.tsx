@@ -61,10 +61,26 @@ const NavHeader = () => {
             </Avatar>
           </DropdownMenuTrigger>
           <DropdownMenuContent>
-            <DropdownMenuItem>Profile</DropdownMenuItem>
-            <DropdownMenuItem>Settings</DropdownMenuItem>
-            <DropdownMenuItem>Logout</DropdownMenuItem>
-          </DropdownMenuContent>
+  <DropdownMenuItem asChild>
+    <Link to="/accountDetails">Account Details</Link>
+  </DropdownMenuItem>
+
+  <DropdownMenuItem asChild>
+    <Link to="/favorites">My Favorites</Link>
+  </DropdownMenuItem>
+
+  
+
+
+ 
+
+  <DropdownMenuItem className="text-red-600">
+    <Link to="/logout">
+    Logout
+    </Link>
+  </DropdownMenuItem>
+</DropdownMenuContent>
+
         </DropdownMenu>
       </nav>
 
@@ -83,24 +99,41 @@ const NavHeader = () => {
           >
             <div className="flex flex-col space-y-4 mt-6">
               <Button variant="ghost" className="text-white w-full text-right">
-                About
+               <Link to="/cars">  
+                Cars
+                </Link>
               </Button>
               <Button variant="ghost" className="text-white w-full text-right">
+               <Link to="/about">  
+                About
+                </Link>
+              </Button>
+              <Button variant="ghost" className="text-white w-full text-right">
+                <Link to="/contact">    
                 Contact
+                </Link>
               </Button>
 
               <p className="text-lg font-extrabold text-white mt-4 mb-2 ml-5">
                 Account
-              </p>
+              </p> 
 
               <Button variant="ghost" className="text-white w-full text-right">
-                Profile
+                <Link to="/accountDetails">    
+                AccountDetails
+                </Link>
               </Button>
               <Button variant="ghost" className="text-white w-full text-right">
-                Settings
+                <Link to="/favorites">
+                   
+                My Favorites
+                </Link>
+              
               </Button>
               <Button variant="ghost" className="text-white w-full text-right">
+                <Link to="/logout">
                 Logout
+                </Link>
               </Button>
             </div>
           </SheetContent>

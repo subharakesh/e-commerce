@@ -9,7 +9,7 @@ export default function Favorites() {
   );
 
   return (
-    <div className="container mx-auto mt-20 px-6">
+    <div className="container mx-auto mt-20 px-6 ml-20">
       <h1 className="text-3xl font-semibold text-gray-900 mb-8 text-center md:text-left">
         Your Favorites
       </h1>

@@ -27,7 +27,25 @@ export const ROUTE_CONFIGS = [
     exact: true,
 },
 {
-    path: "/favorites",  
-    component: () => import("../pages/favorites"),
+    path: "*",  
+    component: () => import("../pages/notFound"),
   },
+    {
+    path: "logout",
+    component: () => import("../pages/logout"),
+    exact: true,
+},
+
+  {
+    path: "favorites",
+    component: () => import("../pages/favorites"),
+    exact: true,
+},
+{
+    path: "accountDetails",
+    component: () => import("../pages/accountDetails"),
+    exact: true,
+},
+
+
 ];
