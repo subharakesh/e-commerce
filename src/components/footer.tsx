@@ -49,11 +49,7 @@ export default function Footer() {
                 <h4 className="font-semibold mb-3">Quick Links</h4>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                  
-                     <li className="hover:text-primary cursor-pointer">
-                        <Link to="/"> Home
-                        </Link>
-                            
-                     </li>
+                     
                  
                        
                      <li className="hover:text-primary cursor-pointer">
