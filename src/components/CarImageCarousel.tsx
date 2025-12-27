@@ -38,7 +38,7 @@ const CarSlide = memo(({ car, showDetails,isFavorite,onToggleFavorite }: { car: 
           className={`absolute top-3 right-3 z-10 h-6 w-6 cursor-pointer
             ${
               isFavorite
-                ? "fill-red-500 text-red-500"
+                ? "fill-orange-500 text-orange-500"
                 : "text-white"
             }
           `}

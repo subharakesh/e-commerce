@@ -22,7 +22,7 @@ export default function HeroCar() {
               <Link to="/cars">Browse Cars</Link>
             </Button>
 
-            <Button  asChild variant="outline" className="border-white text-[#20576E]">
+            <Button  asChild variant="outline" className="border-white text-black hover:bg-white ">
               <Link to="/about">
               Learn More
               </Link>

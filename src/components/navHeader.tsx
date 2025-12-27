@@ -43,9 +43,9 @@ const NavHeader = () => {
           className="relative"
           aria-label={`Favorites: ${favorites.length} items`}
         >
-          <Heart className="h-6 w-6 text-yellow-500 hover:text-red-500" />
+          <Heart className="h-6 w-6 text-red-500 hover:text-red-500" />
           {favorites.length > 0 && (
-            <span className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full text-xs w-5 h-5 flex items-center justify-center">
+            <span className="absolute -top-2 -right-2 bg-orange-500 text-white rounded-full text-xs w-5 h-5 flex items-center justify-center">
               {favorites.length}
             </span>
           )}

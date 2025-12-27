@@ -36,7 +36,7 @@ export function CarCard({ car }: Props) {
   <Heart
     className={`h-5 w-5 ${
       isFavorite
-        ? "fill-red-500 text-red-500"
+        ? "fill-orange-500 text-orange-500"
         : "text-yellow-600"
     }`}
   />
