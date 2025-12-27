@@ -7,6 +7,11 @@ import {
   CarouselNext,
 } from "@/components/ui/carousel";
 import { memo } from "react";
+import {toggleFavorite} from"../store/favoritesSlice";
+import { Heart } from "lucide-react";
+import favorites from "@/pages/favorites";
+import type { RootState } from "@/store";
+import { useDispatch, useSelector } from "react-redux";
 
 type Car = {
   id: number;
@@ -19,12 +24,26 @@ type Car = {
 type Props = {
   cars: Car[];
   showDetails?: boolean;
+
 };
 
-// Memoized single slide to prevent unnecessary re-renders
-const CarSlide = memo(({ car, showDetails }: { car: Car; showDetails?: boolean }) => (
+const CarSlide = memo(({ car, showDetails,isFavorite,onToggleFavorite }: { car: Car; showDetails?: boolean; isFavorite?: boolean; onToggleFavorite?: (car: Car) => void }) => (
   <Link to={`/cars/${car.id}`} className="cursor-pointer group">
-    <div className="overflow-hidden rounded-xl">
+    <div className="relative overflow-hidden rounded-xl">
+
+ <Heart
+          onClick={(e) => {
+            e.preventDefault(); 
+            onToggleFavorite?.(car);
+          }}
+          className={`absolute top-3 right-3 z-10 h-6 w-6 cursor-pointer
+            ${
+              isFavorite
+                ? "fill-red-500 text-red-500"
+                : "text-white"
+            }
+          `}
+        />
       <img
         src={car.image}
         alt={car.name}
@@ -45,7 +64,11 @@ const CarSlide = memo(({ car, showDetails }: { car: Car; showDetails?: boolean }
 ));
 
 export default function CarImageCarousel({ cars, showDetails = false }: Props) {
-  // Render only first 6 cars to reduce initial load
+  const dispatch = useDispatch();
+  const favorites = useSelector(
+    (state: RootState) => state.favorites.favorites
+  );  
+
   const visibleCars = cars.slice(0, 6);
 
   return (
@@ -53,7 +76,10 @@ export default function CarImageCarousel({ cars, showDetails = false }: Props) {
       <CarouselContent>
         {visibleCars.map((car) => (
           <CarouselItem key={car.id} className="basis-1/3">
-            <CarSlide car={car} showDetails={showDetails} />
+            <CarSlide car={car} showDetails={showDetails} 
+            isFavorite={favorites.some((favorite) => favorite.id === car.id)}
+            onToggleFavorite={(car) => dispatch(toggleFavorite(car))}
+            />
           </CarouselItem>
         ))}
       </CarouselContent>
