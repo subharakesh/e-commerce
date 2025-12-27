@@ -9,7 +9,6 @@ import {
 import { memo } from "react";
 import {toggleFavorite} from"../store/favoritesSlice";
 import { Heart } from "lucide-react";
-import favorites from "@/pages/favorites";
 import type { RootState } from "@/store";
 import { useDispatch, useSelector } from "react-redux";
 
