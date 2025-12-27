@@ -7,7 +7,7 @@ import HeroCar from '@/components/heroCar';
 import { InfoSection } from "@/components/infoSection";
 
 import RecentlyViewed from '@/components/recentlyViewed';
-import NavHeader from '@/components/navHeader';
+
 
 
 
@@ -29,7 +29,7 @@ const HomePage = () => {
                  
        
                 <HeroCar />
-                
+
                <h3 className="text-3xl md:text-3xl font-semibold text-[#00022E] mb-3 mt-20 ml-25 font-serif ">The Carverse difference</ h3>
                <InfoSection />
    
