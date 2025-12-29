@@ -3,6 +3,10 @@ import type { RootState } from "@/store/index";
 import { Suspense, lazy, memo } from "react";
 
 
+
+
+
+
 const CarImageCarousel = lazy(() => import("@/components/CarImageCarousel"));
 
 const RecentlyViewed = () => {
