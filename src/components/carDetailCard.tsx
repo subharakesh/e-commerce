@@ -21,12 +21,14 @@ import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import type { Car } from "@/types/car";
 
-interface Props {
-  car: Car;
-} 
 
 
 
+
+
+  type Props = {
+    car: Car;
+  };
 
 export default function CarDetailCard({ car }: Props) {
   const [mainImage, setMainImage] = useState(car.images?.[0] || "");
