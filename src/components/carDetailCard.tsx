@@ -19,27 +19,17 @@ import {
 } from "@/components/ui/alert-dialog";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
+import type { Car } from "@/types/car";
 
-type Car = {
-  id: number;
-  name: string;
-  price: number;
-  year: number;
-  kilometers: number;
-  fuelType: string;
-  transmission: string;
-  owner: string;
-  location: string;
-  description: string;
-  images: string[];
-};
-
-type Props = {
+interface Props {
   car: Car;
-};
+} 
+
+
+
 
 export default function CarDetailCard({ car }: Props) {
-  const [mainImage, setMainImage] = useState(car.images[0]);
+  const [mainImage, setMainImage] = useState(car.images?.[0] || "");
   const navigate = useNavigate();
 
   return (
@@ -55,7 +45,7 @@ export default function CarDetailCard({ car }: Props) {
           />
 
           <div className="grid grid-cols-3 gap-3">
-            {car.images.map((img) => (
+            {car.images?.map((img) => (
               <img
                 key={img}
                 src={img}

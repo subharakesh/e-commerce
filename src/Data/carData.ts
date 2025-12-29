@@ -12,6 +12,7 @@ export const CARS =[
     "year": 2022,
     "image": "/cars/hondacrv.webp",
     "images": [
+       "/cars/hondacrv.webp",
       "/cars/honda1.webp",
       "/cars/honda2.webp",
      
@@ -77,43 +78,43 @@ export const CARS =[
     ],
     "description": "The 2023 Honda Accord is a midsize sedan that combines sleek design, advanced technology, and a comfortable driving experience. It features a modern and aerodynamic exterior with a spacious and well-appointed interior that offers ample legroom and high-quality materials. The Accord comes equipped with Honda Sensing, a suite of safety and driver-assistive technologies, including collision mitigation braking, road departure mitigation, adaptive cruise control, and lane-keeping assist. "
   },
-  // {
-  //   id: 5,
-  //   name: "2018 Nissan Versa SV",
-  //   price: 1650000,
-  //   brand: "Nissann",
-  //   fuelType: "Petrol",
-  //   transmission: "Automatic",
-  //   kilometers: 9000,
-  //   owner: "1st Owner",
-  //   location: "Mumbai",
-  //   year: 2018,
-  //   image: "/cars/nissan.webp",
-  //   images: [
-  //     "/cars/nissan1.webp",
-  //     "/cars/nissan2.webp",
+  {
+    id: 5,
+    name: "2018 Nissan Versa SV",
+    price: 1650000,
+    brand: "Nissann",
+    fuelType: "Petrol",
+    transmission: "Automatic",
+    kilometers: 9000,
+    owner: "1st Owner",
+    location: "Mumbai",
+    year: 2018,
+    image: "/cars/nissan.webp",
+    images: [
+      
+      "/cars/nissan.webp"
      
-  //   ],
-  //   description: "The 2018 Nissan Versa SV is a compact sedan that offers a practical and efficient driving experience. It features a sleek and modern design with a comfortable interior that provides ample space for passengers and cargo. The Versa SV comes equipped with advanced safety features, including a rearview camera, blind-spot monitoring, and rear cross-traffic alert, ensuring peace of mind on the road. The infotainment system includes a touchscreen display with Bluetooth connectivity, allowing for seamless integration with smartphones."
+    ],
+    description: "The 2018 Nissan Versa SV is a compact sedan that offers a practical and efficient driving experience. It features a sleek and modern design with a comfortable interior that provides ample space for passengers and cargo. The Versa SV comes equipped with advanced safety features, including a rearview camera, blind-spot monitoring, and rear cross-traffic alert, ensuring peace of mind on the road. The infotainment system includes a touchscreen display with Bluetooth connectivity, allowing for seamless integration with smartphones."
     
-  // },
-  // {
-  //   id: 6,
-  //   name: "2023 Ford Mustang Ecoboost Premium",
-  //   price: 3850000,
-  //   brand: "Ford",
-  //   fuelType: "Petrol",
-  //   transmission: "Automatic",
-  //   kilometers: 22000,
-  //   owner: "1st Owner",
-  //   location: "Delhi",
-  //   year: 2022,
-  //   image: "/cars/mustang.webp",
-  //   images: [
-  //     "/cars/ford1.webp",
-  //     "/cars/ford2.webp",
+  },
+  {
+    id: 6,
+    name: "2023 Ford Mustang Ecoboost Premium",
+    price: 3850000,
+    brand: "Ford",
+    fuelType: "Petrol",
+    transmission: "Automatic",
+    kilometers: 22000,
+    owner: "1st Owner",
+    location: "Delhi",
+    year: 2022,
+    image: "/cars/mustang.webp",
+    images: [
+      "/cars/ford1.webp",
+      "/cars/ford2.webp",
    
-  //   ],
-  //   description: "The 2023 Ford Mustang Ecoboost Premium is a sporty and stylish coupe that delivers an exhilarating driving experience. It features a sleek and aggressive design with aerodynamic lines and a bold front grille, making it a head-turner on the road. The Ecoboost Premium trim level includes premium features such as leather upholstery, heated and ventilated front seats, a premium sound system, and advanced infotainment options with Apple CarPlay and Android Auto compatibility. "
-  // }
+    ],
+    description: "The 2023 Ford Mustang Ecoboost Premium is a sporty and stylish coupe that delivers an exhilarating driving experience. It features a sleek and aggressive design with aerodynamic lines and a bold front grille, making it a head-turner on the road. The Ecoboost Premium trim level includes premium features such as leather upholstery, heated and ventilated front seats, a premium sound system, and advanced infotainment options with Apple CarPlay and Android Auto compatibility. "
+  }
 ];

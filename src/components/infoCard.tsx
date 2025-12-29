@@ -1,13 +1,10 @@
-import type { LucideIcon } from "lucide-react";
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import type { InfoCardData } from "@/types/infoCard";
 
-interface InfoCardProps {
-  icon: LucideIcon;
-  title: string;
-  description: string;
-}
 
-export function InfoCard({ icon: Icon, title, description }: InfoCardProps) {
+
+export function InfoCard({ icon: Icon, title, description }: InfoCardData) {
   return (
     <div className="flex h-full ">
 

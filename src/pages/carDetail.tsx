@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { CARS } from "@/utils/carData";
+import { CARS } from "@/Data/carData";
 import CarDetailCard from "@/components/carDetailCard";
 import { addRecentlyViewed } from "@/store/recentlyViewedSlice";
 

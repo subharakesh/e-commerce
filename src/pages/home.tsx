@@ -1,5 +1,5 @@
 import { Suspense, lazy } from "react";
-import Footer from "@/components/footer";
+
 
 const Hero = lazy(() => import("@/components/hero"));
 const HeroCar = lazy(() => import("@/components/heroCar"));
@@ -31,7 +31,7 @@ const HomePage = () => {
 
       <RecentlyViewed />
 
-      <Footer />
+    
     </>
   );
 };

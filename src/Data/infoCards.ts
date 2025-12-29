@@ -1,13 +1,6 @@
-import type { LucideIcon } from "lucide-react";
+
 import { ClipboardMinus, ShieldCheck, BadgeCheck } from "lucide-react";
-
-
-export interface InfoCardData {
-  icon: LucideIcon;
-  title: string;
-  description: string;
-}
-
+import type { InfoCardData } from "@/types/infoCard"; 
 
 export const INFO_CARDS: InfoCardData[] = [
   {

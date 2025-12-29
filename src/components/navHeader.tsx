@@ -30,10 +30,10 @@ const NavHeader = () => {
         <Link to="/cars">
           <Button variant="ghost">Cars</Button>
         </Link>
-        <Link to="/about">
+        <Link to="/about" aria-label="About CarVerse">
           <Button variant="ghost">About</Button>
         </Link>
-        <Link to="/contact">
+        <Link to="/contact" aria-label="Contact CarVerse">
           <Button variant="ghost">Contact</Button>
         </Link>
 

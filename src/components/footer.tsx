@@ -24,7 +24,7 @@ export default function Footer() {
            
               <div className="space-y-3 ml-7">
                 <div className="flex items-center gap-2 text-xl font-bold">
-                  <Car className="h-6 w-6 text-primary text-[#00C9A7]" />
+                 <Car className="text-[#960000] w-5 h-5 stroke-[2] transition-transform duration-300 hover:rotate-12 " />
                   CarVerse
                 </div>
                 <p className="text-sm text-muted-foreground">

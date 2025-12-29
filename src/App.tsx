@@ -1,62 +1,36 @@
-
 import React from "react";
-import {  Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { ROUTE_CONFIGS } from "./utils/routerConfig";
-import NavHeader from "./components/navHeader";
 import { Toaster } from "sonner";
-
-
-
-
+import MainLayout from "@/layouts/layout";
 
 function App() {
   return (
-    <section>
-      <NavHeader />
-       <Toaster position="bottom-right" richColors />
-    
-    
-    
-      <div>
-        <Routes>
-          {ROUTE_CONFIGS.map(
-            ({ path, component: Component}, index) => {
-               const LazyComponent = React.lazy(Component);
+    <>
+      <Toaster position="bottom-right" richColors />
 
+      <Routes>
+       
+        <Route element={<MainLayout />}>
+          {ROUTE_CONFIGS.map(({ path, component: Component }, index) => {
+            const LazyComponent = React.lazy(Component);
 
-           
-                return (
-                  <Route
-                    key={index}
-                    path={path}
-                    element={
-                       <React.Suspense fallback={<div>Loading...</div>}>
-                  <LazyComponent />
-                </React.Suspense>
-              
-                    }
-                  />
-                );
-              })
-              }
-                    
-        </Routes>
-      </div>
-      
-     
-     
-    </section>
-    
+            return (
+              <Route
+                key={index}
+                path={path}
+                element={
+                  <React.Suspense fallback={<div>Loading...</div>}>
+                    <LazyComponent />
+                  </React.Suspense>
+                }
+              />
+            );
+          })}
+        </Route>
+      </Routes>
+    </>
   );
 }
 
 export default App;
-
-             
-               
-               
-
-             
-
-           
-    

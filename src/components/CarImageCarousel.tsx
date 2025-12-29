@@ -11,14 +11,9 @@ import {toggleFavorite} from"../store/favoritesSlice";
 import { Heart } from "lucide-react";
 import type { RootState } from "@/store";
 import { useDispatch, useSelector } from "react-redux";
+import type { Car } from "@/types/car";
 
-type Car = {
-  id: number;
-  image: string;
-  name: string;
-  kilometers: number;
-  price: number;
-};
+
 
 type Props = {
   cars: Car[];
