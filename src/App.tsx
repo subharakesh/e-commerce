@@ -20,7 +20,7 @@ function App() {
                 key={index}
                 path={path}
                 element={
-                  <React.Suspense fallback={<div>Loading...</div>}>
+                  <React.Suspense fallback={<div className="min-h-[60vh] flex items-center justify-center">Loading...</div>}>
                     <LazyComponent />
                   </React.Suspense>
                 }
