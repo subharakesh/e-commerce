@@ -1,13 +1,14 @@
 import { useSelector } from "react-redux";
 import type { RootState } from "@/store/index";
-import { Suspense, lazy, memo } from "react";
+import { memo } from "react"; 
 
 
 
 
 
 
-const CarImageCarousel = lazy(() => import("@/components/CarImageCarousel"));
+
+import CarImageCarousel from "./CarImageCarousel";  
 
 const RecentlyViewed = () => {
   const recentlyViewed = useSelector(
@@ -27,9 +28,9 @@ const RecentlyViewed = () => {
 
       
       <div className="px-4">
-        <Suspense fallback={<div className="text-gray-500 text-center py-10">Loading...</div>}>
+      
           <CarImageCarousel cars={recentlyViewed}  />
-        </Suspense>
+     
       </div>
     </section>
   );
