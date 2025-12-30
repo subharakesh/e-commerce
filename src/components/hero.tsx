@@ -23,7 +23,9 @@ export default function HeroCar() {
             </Button>
 
             <Button  asChild variant="outline" className="border-white text-black hover:bg-white ">
-              <Link to="/about">About CarVerse</Link>
+              <Link to="/about">
+              Learn More
+              </Link>
 
             </Button>
           </div>
