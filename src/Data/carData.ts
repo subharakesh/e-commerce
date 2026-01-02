@@ -80,7 +80,7 @@ export const CARS =[
   },
   {
     id: 5,
-    name: "2018 Nissan Versa SV",
+    name: " 2018  Nissan  Versa SV ",
     price: 1650000,
     brand: "Nissann",
     fuelType: "Petrol",

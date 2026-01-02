@@ -17,7 +17,8 @@ const NavHeader = () => {
   const favorites = useSelector((state: RootState) => state.favorites.favorites);
 
   return (
-    <header className="sticky top-0 z-50 flex justify-between items-center p-4 border-none border-border">
+   <header className="sticky top-0 z-50 h-16 bg-white/90 backdrop-blur flex justify-between items-center px-4 ">
+
    
       <Link to="/">
         <div className="flex items-center gap-2">

@@ -1,14 +1,8 @@
 import { useSelector } from "react-redux";
 import type { RootState } from "@/store/index";
-import { memo } from "react"; 
+import { memo, lazy, Suspense } from "react";
 
-
-
-
-
-
-
-import CarImageCarousel from "./CarImageCarousel";  
+const CarImageCarousel = lazy(() => import("./CarImageCarousel"));
 
 const RecentlyViewed = () => {
   const recentlyViewed = useSelector(
@@ -26,11 +20,10 @@ const RecentlyViewed = () => {
         Pick up where you left off
       </h4>
 
-      
       <div className="px-4">
-      
-          <CarImageCarousel cars={recentlyViewed}  />
-     
+        <Suspense fallback={<div className="h-40" />}>
+          <CarImageCarousel cars={recentlyViewed} />
+        </Suspense>
       </div>
     </section>
   );

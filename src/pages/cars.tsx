@@ -10,8 +10,8 @@ const Cars = () => {
   const [visible, setVisible] = useState(6);
 
   return (
-    <div className="p-6 mb-20">
-      <h1 className="text-2xl font-bold mb-30 mt-30  text-center">
+    <div className="p-6 mb-20 ">
+      <h1 className="text-2xl font-bold mb-10 mt-10  text-center">
         Available Cars
       </h1>
 

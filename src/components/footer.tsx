@@ -34,14 +34,17 @@ export default function Footer() {
 
               <div>
                 <h4 className="font-semibold mb-3">Car Categories</h4>
-                <Link to="/cars">
+                
                 <ul className="space-y-2 text-sm text-muted-foreground">
+                  <Link to="/cars">
                   <li className="hover:text-primary cursor-pointer">SUVs</li>
                   <li className="hover:text-primary cursor-pointer">Sedans</li>
                   <li className="hover:text-primary cursor-pointer">Hatchbacks</li>
                   <li className="hover:text-primary cursor-pointer">Electric Cars</li>
+                  </Link>
+
                 </ul>
-                </Link>
+                
               </div>
 
             

@@ -42,17 +42,15 @@ export function CarCard({ car }: Props) {
   />
 </button>
 
-
-    
       <img
         src={car.image}
         alt={car.name}
         onClick={() => navigate(`/cars/${car.id}`)}
-        className="w-full object-cover aspect-video cursor-pointer"
+        className="w-full object-cover aspect-video cursor-pointer h-48"
       />
 
       <CardContent className="p-4 space-y-4 mb-2">
-        <h2 className="text-1xl semibold text-gray-900 leading-tight line-clamp-2">
+        <h2 className="text-1xl semibold text-gray-900 leading-tight line-clamp-1">
           {car.name} ({car.owner})
         </h2>
 
@@ -87,7 +85,7 @@ export function CarCard({ car }: Props) {
       <CardFooter>
         <button
           onClick={() => navigate(`/cars/${car.id}`)}
-          className="w-full bg-[#311432] text-white py-2 px-4 rounded-lg hover:bg-[#D7BFDC] transition-colors"
+          className="w-full bg-[#311432] text-white py-2 px-4 rounded-lg hover:bg-[#D7BFDC] transition-colors mb-0"
         >
           View Details
         </button>
